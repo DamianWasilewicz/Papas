@@ -1,16 +1,12 @@
 import './App.css';
+import Cart from './Cart.js'
+import React from 'react';
 
 function App() {
   return (
-    <div className="App">
-      <div> CART </div>
-      <div className="item">
-        <div className="itemPicture">img placeholder</div>
-        <div className="itemName">Fried Shrimp</div>
-        <div className="itemRemove">Remove</div>
-      </div>
-      <div className="checkout"> CHECKOUT </div>
-    </div>
+    <React.Fragment>
+      <Cart />
+    </React.Fragment>
   );
 }
 
