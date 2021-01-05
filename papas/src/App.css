@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@800&display=swap');
 
+.App{
+  text-align: left;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 4vw;
+    margin: 170px;
+}
 
 .Nav {
   background-color: #B05C54;
@@ -15,3 +24,33 @@
   pointer-events: none;
 }
 
+.popup{
+    display: flex;
+    flex-direction: column;
+  	width: 100%;
+  	height: 300px;
+    background: #B05C54;
+    padding: 10px;
+}
+
+.username{
+  font-size: 3vw;
+}
+
+.password{
+  font-size: 3vw;
+}
+
+.submit{
+  margin-left: auto;
+}
+
+textarea {
+  resize: none;
+  width: 85%;
+  height: 25px;
+  background-color: #CC8983;
+  color: white;
+  border: none;
+  font-family: 'Saira Extra Condensed', sans-serif;
+}

@@ -1,8 +1,8 @@
-
 import React from 'react';
 import './App.css';
 import Menu from './Menu.js';
-import Cart from './Cart.js'
+import Cart from './Cart.js';
+import Login from './Login.js';
 import { 
   BrowserRouter as Router,
   Switch,
@@ -22,11 +22,12 @@ function App() {
               <Link to="/menu">Menu</Link>
               <Link to="/reviews">Reviews</Link>
               <Link to="/cart">Cart</Link>
+              <Link to="/login">Login</Link>
             </ul>
           </nav>
 
           <Switch>
-            <Route path="/">
+            <Route exact path="/">
               <Menu />
             </Route>
 
@@ -40,6 +41,10 @@ function App() {
 
             <Route path="/cart">
               <Cart />
+            </Route>
+
+            <Route path="/login">
+              <Login />
             </Route>
             
           </Switch>
