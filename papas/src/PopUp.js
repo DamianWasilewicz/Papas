@@ -30,9 +30,6 @@ export default class PopUp extends Component {
     return (
       <div className="modal">
         <div className="modal_content">
-          <span className="close" onClick={this.handleClick}>
-            &times;
-          </span>
           <div className='popup'>  
             <div className='popup_inner'> 
                 <div className='username'>
@@ -40,6 +37,9 @@ export default class PopUp extends Component {
                         Username: 
                         <textarea rows="1" value={this.state.username} onChange={this.handleChange} />
                     </label>
+                    <span className="close" onClick={this.handleClick}>
+                        &times;
+                    </span>
                 </div>
                 <div className='password'>
                         <label>

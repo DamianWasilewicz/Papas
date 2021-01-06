@@ -35,14 +35,14 @@ export default class App extends React.Component {
                 <Link to="/">Home</Link>
                 <Link to="/menu">Menu</Link>
                 <Link to="/reviews">Reviews</Link>
-                <Link to="/cart">Cart</Link>
-                {/* <Link to="/login">Login</Link> */}
+            
                 <div>
                   <div className="btn" onClick={this.togglePop}>
                     <button>Login</button>
                   </div>
                   {this.state.login ? <PopUp toggle={this.togglePop} /> : null}
                 </div>
+                <Link to="/cart">Cart</Link>
               </ul>
             </nav>
   
