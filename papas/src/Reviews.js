@@ -12,9 +12,8 @@ const StyleDiv = styled.div`
 `
 
 const LeftHeaderDiv = styled.div`
-	font-size: 2em;
 	text-align: left;
-	padding: 10px;
+	
 `
 
 const RightHeaderDiv = styled.div`
@@ -53,10 +52,10 @@ const Reviews = () => {
 	}
 
 	return <div>
-		<StyleDiv>
-			<LeftHeaderDiv>
+		<LeftHeaderDiv>
 				<h1>REVIEWS</h1>
 			</LeftHeaderDiv>
+			<StyleDiv>
 			<RightHeaderDiv>
 				<button onClick = {writeReview}>Write a Review Here!</button>
 			</RightHeaderDiv>

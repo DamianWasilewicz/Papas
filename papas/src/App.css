@@ -64,3 +64,40 @@ textarea {
   border: none;
   font-family: 'Saira Extra Condensed', sans-serif;
 }
+
+button {
+  background-color: #B05C54;
+  outline: none;
+  font-family: 'Saira Extra Condensed', sans-serif;
+  color: #FFFFFF;
+  border-style: solid;
+  border-color: transparent;
+  font-size: 3vw;
+}
+
+button:hover {
+  background-color: #A94239;
+}
+
+
+.modal_content {
+  background-color: #B05C54;
+  z-index: 1;
+  position: fixed;
+  top: 20%;
+  left: 30%;
+  width: 40%;
+  padding: 20px;
+}
+
+.close {
+  color:#FFFFFF;
+  float: right;
+}
+
+.close:hover {
+  color: #A94239;
+  cursor: pointer;
+}
+
+
