@@ -1,0 +1,42 @@
+.Cart {
+    text-align: left;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 4vw;
+    
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+  	width: 100%;
+  	height: 150px;
+    background: #CC8983;
+    padding: 10px;
+}
+
+.itemPicture {
+    display: inline-block;
+    width: 11%;
+    height: 100%;
+    background:grey;
+    font-size: small;
+    text-align: center;
+}
+
+.checkout {
+    text-align: right;
+}
+
+.itemName{
+    font-size: 70%;
+    padding-left: 10px;
+}
+
+.itemRemove{
+    font-size: 70%;
+    margin-left: auto;
+    padding-right: 10px;
+}

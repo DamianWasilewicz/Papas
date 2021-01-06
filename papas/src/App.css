@@ -1,5 +1,22 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@800&display=swap');
+
+.App{
+  text-align: left;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 4vw;
+    margin: 170px;
+}
+
+.Nav {
+  background-color: #B05C54;
+}
+.flex-ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .Nav {
@@ -17,32 +34,33 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.popup{
+    display: flex;
+    flex-direction: column;
+  	width: 100%;
+  	height: 300px;
+    background: #B05C54;
+    padding: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.username{
+  font-size: 3vw;
+}
+
+.password{
+  font-size: 3vw;
+}
+
+.submit{
+  margin-left: auto;
+}
+
+textarea {
+  resize: none;
+  width: 85%;
+  height: 25px;
+  background-color: #CC8983;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  border: none;
+  font-family: 'Saira Extra Condensed', sans-serif;
 }
