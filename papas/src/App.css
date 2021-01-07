@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@800&display=swap');
-
 .App{
   text-align: left;
     color: white;
@@ -29,9 +28,76 @@
   justify-content: space-around;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+.container {
+  display: flex;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.title {
+  display: flex;
+  position: relative;
+  width: 1000px;
+  height: 200px;
+  flex-direction: column;
+  justify-content: flex-center;
+  align-content: center;
+  padding-top: 100px;
+  padding-right: 30px;
+  padding-bottom: 0px;
+  left: -140px;
+  animation-name: grow;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-delay: -2s;
+}
+
+.icons {
+  display: flex;
+  width: 400px;
+  height: 100px;
+  position: relative;
+  top: -150px;
+  left: 90px;
+  justify-content: space-between;
+}
+
+.logopapa {
+  padding-top: 90px;
+  padding-right: 0px;
+  padding-left: 180px;
+}
+
+@keyframes grow {
+  from {transform: scale(1);}
+  to {transform: scale(1.07);}
+}
+
+.logopapaHome {
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 7px;
+  border-radius: 50%;
+  border-color: #FFFF;
+  border-style:solid;
+  border-width: 3px;
+}
+
+.fa:hover {
+  transform: scale(1.1);
 }
 
 .popup{
@@ -59,6 +125,20 @@ textarea {
   width: 85%;
   height: 25px;
   background-color: #CC8983;
+=======
+.fa-facebook {
+  position: absolute;
+  top: -70px;
+  left: -65px;
+  background: transparent;
+  color: white;
+}
+
+.fa-twitter {
+  position: absolute;
+  top: -20px;
+  left: 40px;
+  background: transparent;
   color: white;
   border: none;
   font-family: 'Saira Extra Condensed', sans-serif;
@@ -100,4 +180,26 @@ button:hover {
   cursor: pointer;
 }
 
+.fa-instagram {
+  position: absolute;
+  top: -30px;
+  left: 150px;
+  background: transparent;
+  color: white;
+}
 
+.fa-snapchat-ghost {
+  position: absolute;
+  top: -80px;
+  left: 250px;
+  background: transparent;
+  color: white;
+}
+
+.fa-snapchat:before{content:"\f2ab"}.fa-snapchat-ghost:before{content:"\f2ac"}.fa-snapchat-square:before{content:"\f2ad"}
+
+.fa-facebook:before{content:"\f09a"}
+
+.fa-twitter:before{content:"\f099"}.fa-twitter-square:before{content:"\f081"}
+
+.fa-instagram:before{content:"\f16d"}

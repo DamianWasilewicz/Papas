@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import './App.css';
 import Menu from './Menu.js';
@@ -17,6 +18,18 @@ export default class App extends React.Component {
   state = {
     login: false
   };
+=======
+import "./App.css";
+import HomeFunctionalComponent from "./components/HomeFunctionalComponent";
+
+function App() {
+  return (
+    <>
+      <HomeFunctionalComponent />
+    </>
+  );
+}
+>>>>>>> home
 
   togglePop = () => {
     this.setState({
