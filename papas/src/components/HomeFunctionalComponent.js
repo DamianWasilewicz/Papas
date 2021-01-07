@@ -9,28 +9,28 @@ const StyledDiv = styled.div`
     display = flex;
     align-items: center;
     flex-direction: row;
-    font-family: 'Saira Extra Condensed', sans-serif; 
+    font-family: 'Saira Extra Condensed', sans-serif;
     color: #FFFFFF;
     width=inherit;
     height=200px;
 `;
 
 const Styledh1 = styled.h1`
-    font-size: 220%;   
-    line-height:0px; 
+    font-size: 220%;
+    line-height:0px;
     left: 10px;
     margin-left: 60px;
 `;
 
 const Styledh2 = styled.h2`
-    font-size: 60px;  
-    line-height:50px; 
+    font-size: 60px;
+    line-height:50px;
     margin-left: 60px;
     position: absolute;
     left: 240px;
     top: 110px;
     padding-top = 10px;
-    padding-bottom = 0px;  
+    padding-bottom = 0px;
 `;
 
 const Styled2h2 = styled(Styledh2)`
@@ -69,7 +69,6 @@ const HomeFunctionalComponent = (props) => {
 
     return(
         <>
-        <NavBarFunctionalComponent />
         <StyledDiv>
             <div className = "container">
                 <div className = "logopapa">

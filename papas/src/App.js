@@ -1,35 +1,24 @@
-<<<<<<< HEAD
 import React from 'react';
 import './App.css';
 import Menu from './Menu.js';
 import Cart from './Cart.js';
-// import Login from './Login.js';
 import Reviews from './Reviews.js';
 import Popup from 'reactjs-popup';
 import PopUp from './PopUp.js'
-import { 
+import {
   BrowserRouter as Router,
   Switch,
-  Route, 
+  Route,
   Link
 } from "react-router-dom";
+import "./App.css";
+import HomeFunctionalComponent from "./components/HomeFunctionalComponent";
+import NavBarFunctionalComponent from "./components/NavBarFunctionalComponent";
 
 export default class App extends React.Component {
   state = {
     login: false
   };
-=======
-import "./App.css";
-import HomeFunctionalComponent from "./components/HomeFunctionalComponent";
-
-function App() {
-  return (
-    <>
-      <HomeFunctionalComponent />
-    </>
-  );
-}
->>>>>>> home
 
   togglePop = () => {
     this.setState({
@@ -41,50 +30,39 @@ function App() {
   render(){
     return (
       <React.Fragment>
-        <div className="App"> 
+        <div className="App">
           <Router>
-            <nav className="Nav">
-              <ul className="flex-ul">
-                <Link to="/">Home</Link>
-                <Link to="/menu">Menu</Link>
-                <Link to="/reviews">Reviews</Link>
-            
-                <div>
-                  <div className="btn" onClick={this.togglePop}>
-                    <button>Login</button>
-                  </div>
-                  {this.state.login ? <PopUp toggle={this.togglePop} /> : null}
-                </div>
-                <Link to="/cart">Cart</Link>
-              </ul>
-            </nav>
-  
+
             <Switch>
               <Route exact path="/">
-                <Menu />
+                <NavBarFunctionalComponent />
+                <HomeFunctionalComponent />
               </Route>
-  
+
               <Route path="/menu">
+                <NavBarFunctionalComponent />
                 <Menu />
               </Route>
-  
+
               <Route path="/reviews">
+                <NavBarFunctionalComponent />
                 <Reviews />
               </Route>
-  
+
               <Route path="/cart">
+                <NavBarFunctionalComponent />
                 <Cart />
               </Route>
-  
+
               {/* <Route path="/login">
                 <Login />
               </Route> */}
-              
+
             </Switch>
           </Router>
         </div>
       </React.Fragment>
     );
   }
-  
+
 }

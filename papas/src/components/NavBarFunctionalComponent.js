@@ -1,11 +1,12 @@
 import React, {} from "react";
 import styled from "styled-components";
+import { Link } from 'react-router-dom';
 
 const StyledDiv = styled.div`
     display = flex;
     align-items: center;
     flex-direction: row;
-    font-family: 'Saira Extra Condensed', sans-serif; 
+    font-family: 'Saira Extra Condensed', sans-serif;
     font-size: 20px;
     color: #FFFFFF;
     margin=0px;
@@ -21,14 +22,14 @@ const Styledul = styled.ul`
 
 const Styledli = styled.li`
     float: left;
-    font-size: 130%;   
+    font-size: 130%;
     padding-right: 60px;
     height: 50px;
     background-color: transparent;
 `;
 
 const StyledRightli = styled(Styledli)`
-    float: right;   
+    float: right;
     top: 2000px;
 `;
 
@@ -109,13 +110,13 @@ const Styled2Div2 = styled.div`
 
 
 const NavBarFunctionalComponent = (props) => {
-    
+
     return(
         <StyledDiv>
             <Styledul>
-                <Styledli><Styleda href="./">HOME</Styleda></Styledli>
-                <Styled2Div2> 
-                    <Styledli><Styleda href="./">MENU</Styleda></Styledli>
+                <Styledli><Link to="/"><Styleda>HOME</Styleda></Link></Styledli>
+                <Styled2Div2>
+                    <Styledli><Link to="/menu"><Styleda>MENU</Styleda></Link></Styledli>
                     <Styled2Div3>
                         <Styleda2 href="#">SEAFOOD</Styleda2>
                         <Styleda2 href="#">MEXICAN</Styleda2>
@@ -128,17 +129,17 @@ const NavBarFunctionalComponent = (props) => {
                     </Styled2Div3>
                  </Styled2Div2>
                 <StyledDiv2>
-                    <Styledli><Styleda href="./">REVIEWS</Styleda></Styledli>
+                    <Styledli><Link to="/reviews"><Styleda>REVIEWS</Styleda></Link></Styledli>
                     <StyledDiv3>
                         <Styleda2 href="#">VIEW</Styleda2>
                         <Styleda2 href="#">WRITE</Styleda2>
                     </StyledDiv3>
                 </StyledDiv2>
-                <StyledRightli><Styleda href="./">CART</Styleda></StyledRightli>
-                <StyledRightli><Styleda href="./">LOGIN</Styleda></StyledRightli>
+                <StyledRightli><Link to="/cart"><Styleda>CART</Styleda></Link></StyledRightli>
+                <StyledRightli><Link to="/login"><Styleda>LOGIN</Styleda></Link></StyledRightli>
             </Styledul>
         </StyledDiv>
-      
+
     );
 
 }
