@@ -58,35 +58,16 @@ const Reviews = () => {
 		<Link to="/reviews">Go to Reviews</Link>                   
 	}
 
-	// const writeReview = () => {
-	// 	<Link to="/write">Go to Writing</Link>;
-
-	// 	<Route exact path="/write">
-	// 		<Submit />
-	// 	</Route>
-	// }
-
 	return <div>
 		<LeftHeaderDiv>
 				<h1>REVIEWS</h1>
 			</LeftHeaderDiv>
 			<StyleDiv>
 			<RightHeaderDiv className="btn" onClick={togglePop}>
-				{/* <button onClick = {writeReview}>Write a Review Here!</button> */}
-				{/* <Router>
-					<Link to="/write">Write a Review Here!</Link>
-					<Switch>
-						<Route path="/write">
-							<Submit />
-						</Route>
-					</Switch>
-				</Router> */}
 				<div>
                 	<button>Write a Review Here!</button>
-                  </div>
-                  {login ? <Submit toggle={togglePop} /> : null}
-             
-				
+				</div>
+				{login ? <Submit toggle={togglePop} /> : null}
 			</RightHeaderDiv>
 			<ReviewDiv>
 				<h1>Jane Doe</h1>
