@@ -1,6 +1,7 @@
 import React, {} from "react";
 import styled from "styled-components";
 import { Link } from 'react-router-dom';
+import PopUp from './PopUp.js'
 
 const StyledDiv = styled.div`
     display = flex;
@@ -136,6 +137,12 @@ const NavBarFunctionalComponent = (props) => {
                     </StyledDiv3>
                 </StyledDiv2>
                 <StyledRightli><Link to="/cart"><Styleda>CART</Styleda></Link></StyledRightli>
+                {/* <div>
+                  <div className="btn" onClick={this.togglePop}>
+                    <button>Login</button>
+                  </div>
+                  {this.state.login ? <PopUp toggle={this.togglePop} /> : null}
+                </div> */}
                 <StyledRightli><Link to="/login"><Styleda>LOGIN</Styleda></Link></StyledRightli>
             </Styledul>
         </StyledDiv>

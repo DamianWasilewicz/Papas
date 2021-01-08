@@ -1,6 +1,5 @@
 import React, {} from "react";
 import styled from "styled-components";
-import NavBarFunctionalComponent from "./NavBarFunctionalComponent";
 
 const StyledDiv = styled.div`
     @import url('https://fonts.googleapis.com/css2?

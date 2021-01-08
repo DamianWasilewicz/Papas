@@ -3,8 +3,6 @@ import './App.css';
 import Menu from './Menu.js';
 import Cart from './Cart.js';
 import Reviews from './Reviews.js';
-import Popup from 'reactjs-popup';
-import PopUp from './PopUp.js'
 import {
   BrowserRouter as Router,
   Switch,
@@ -12,21 +10,11 @@ import {
   Link
 } from "react-router-dom";
 import "./App.css";
-import HomeFunctionalComponent from "./components/HomeFunctionalComponent";
-import NavBarFunctionalComponent from "./components/NavBarFunctionalComponent";
+import HomeFunctionalComponent from "./HomeFunctionalComponent";
+import NavBarFunctionalComponent from "./NavBarFunctionalComponent";
 
 export default class App extends React.Component {
-  state = {
-    login: false
-  };
-
-  togglePop = () => {
-    this.setState({
-      login: !this.state.login
-    });
-  };
-
-
+  
   render(){
     return (
       <React.Fragment>

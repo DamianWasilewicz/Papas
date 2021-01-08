@@ -1,4 +1,32 @@
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@800&display=swap');
+
+.App{
+  text-align: left;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 4vw;
+}
+
+.Nav {
+  background-color: #B05C54;
+}
+.flex-ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.Nav {
+  background-color: #B05C54;
+}
+
+.flex-ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 
 .container {
   display: flex;
