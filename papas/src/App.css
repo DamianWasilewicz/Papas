@@ -202,3 +202,7 @@ button:hover {
 .fa-twitter:before{content:"\f099"}.fa-twitter-square:before{content:"\f081"}
 
 .fa-instagram:before{content:"\f16d"}
+
+.box{
+  background-color: teal;
+}

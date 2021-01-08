@@ -1,6 +1,12 @@
 import React, { useState, useEffect } from "react";
-import {BrowserRouter, Switch, Route, Link} from "react-router-dom";
+import {
+	BrowserRouter as Router,
+	Switch,
+	Route,
+	Link
+  } from "react-router-dom";
 import styled from "styled-components";
+import Submit from './Submit.js';
 
 
 const StyleDiv = styled.div`
@@ -42,22 +48,45 @@ const WriteReview = styled.div`
 `
 
 const Reviews = () => {
+	const [login, set_login] = useState(false)
+
+	const togglePop = () => {
+		set_login(!login);
+	};
 
 	const clickSubmit = () => {
 		<Link to="/reviews">Go to Reviews</Link>                   
 	}
 
-	const writeReview = () => {
-		<Link to="/write">Go to Writing</Link>
-	}
+	// const writeReview = () => {
+	// 	<Link to="/write">Go to Writing</Link>;
+
+	// 	<Route exact path="/write">
+	// 		<Submit />
+	// 	</Route>
+	// }
 
 	return <div>
 		<LeftHeaderDiv>
 				<h1>REVIEWS</h1>
 			</LeftHeaderDiv>
 			<StyleDiv>
-			<RightHeaderDiv>
-				<button onClick = {writeReview}>Write a Review Here!</button>
+			<RightHeaderDiv className="btn" onClick={togglePop}>
+				{/* <button onClick = {writeReview}>Write a Review Here!</button> */}
+				{/* <Router>
+					<Link to="/write">Write a Review Here!</Link>
+					<Switch>
+						<Route path="/write">
+							<Submit />
+						</Route>
+					</Switch>
+				</Router> */}
+				<div>
+                	<button>Write a Review Here!</button>
+                  </div>
+                  {login ? <Submit toggle={togglePop} /> : null}
+             
+				
 			</RightHeaderDiv>
 			<ReviewDiv>
 				<h1>Jane Doe</h1>

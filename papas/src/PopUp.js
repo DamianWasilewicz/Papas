@@ -10,21 +10,22 @@ export default class PopUp extends Component {
     
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+        // this.handleClick = this.handleClick.bind(this);
     }
 
     handleChange(event) {
-    this.setState({username: event.target.username});
-    this.setState({password: event.target.password});
+      this.setState({username: event.target.username});
+      this.setState({password: event.target.password});
     }
     
     handleSubmit(event) {
-    alert('Login submitted ' + this.state.username);
-    event.preventDefault();
+      alert('Login submitted ' + this.state.username);
+      event.preventDefault();
     }
 
     handleClick = () => {
-    this.props.toggle();
-  };
+      this.props.toggle();
+    };
 
   render() {
     return (
